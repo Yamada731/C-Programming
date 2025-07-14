@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int num, i;
+    int n, i;
 
-    printf("Enter a number to display its multiplication table: ");
-    scanf("%d", &num);
+    // User pora number loi ase
+    printf("Enter a number: ");
+    scanf("%d", &n);
 
-    for (i = 1; i <= 10; ++i) {
-        printf("%d x %d = %d\n", num, i, num * i);
+    // 1 pora 10 logot multiply kori print kore
+    for(i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", n, i, n*i);
     }
 
     return 0;

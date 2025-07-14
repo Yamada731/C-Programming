@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2;
+    int a, b; // Duita variable declare kora hoise
 
+    // User pora value loi ase
     printf("Enter two numbers: ");
-    scanf("%d %d", &num1, &num2);
+    scanf("%d %d", &a, &b);
 
-    if (num1 > num2)
-        printf("%d is larger.\n", num1);
-    else if (num2 > num1)
-        printf("%d is larger.\n", num2);
+    // Compare kori boro number print kore
+    if (a > b)
+        printf("Largest number is: %d\n", a);
     else
-        printf("Both numbers are equal.\n");
+        printf("Largest number is: %d\n", b);
 
     return 0;
 }

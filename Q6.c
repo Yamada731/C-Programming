@@ -1,15 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    int n;
 
+    // User pora ekhon number loi ase
     printf("Enter a number: ");
-    scanf("%d", &num);
+    scanf("%d", &n);
 
-    if (num % 2 == 0)
-        printf("%d is even.\n", num);
+    // Even or odd check kori ase
+    if (n % 2 == 0)
+        printf("%d is Even\n", n);
     else
-        printf("%d is odd.\n", num);
+        printf("%d is Odd\n", n);
 
     return 0;
 }

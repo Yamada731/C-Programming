@@ -1,20 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    int n, i;
-    unsigned long long factorial = 1;
+    int i, n;
+    unsigned long long fact = 1; // Boro number hold koriboloi long long
 
-    printf("Enter a positive integer: ");
+    // User pora ekhon number loi ase
+    printf("Enter a number: ");
     scanf("%d", &n);
 
-    if (n < 0)
-        printf("Factorial of negative number doesn't exist.\n");
-    else {
-        for (i = 1; i <= n; ++i) {
-            factorial *= i;  // Multiply each number up to n
-        }
-        printf("Factorial of %d = %llu\n", n, factorial);
+    // 1 pora n logot guni guni factorial calculate kora hoise
+    for(i = 1; i <= n; i++) {
+        fact *= i;
     }
 
+    // Result print kore
+    printf("Factorial of %d is %llu\n", n, fact);
     return 0;
 }
